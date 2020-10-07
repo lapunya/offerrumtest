@@ -36,7 +36,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-color: #ffffff;
+  background-color: #111111;
   font-family: "Rubik", "Arial", sans-serif;
   overflow-x: hidden; }
 
@@ -52,3 +52,184 @@ body {
           clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden; }
+
+.header__container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding-top: 24px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start; }
+
+.nav__list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.nav__item {
+  margin-right: 40px; }
+  .nav__item:last-child {
+    margin-right: 0; }
+
+.nav__link {
+  font-size: 18px;
+  line-height: 24px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff;
+  text-decoration: none; }
+  .nav__link:hover {
+    opacity: 0.6; }
+  .nav__link:active {
+    opacity: 0.3; }
+
+.intro {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(88.3%, #fcda28), color-stop(88.3%, #111111));
+  background: linear-gradient(to bottom, #fcda28 88.3%, #111111 88.3%);
+  z-index: -2;
+  position: relative; }
+
+.intro__container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding-top: 104px;
+  padding-bottom: 200px;
+  position: relative; }
+
+.intro__title {
+  font-size: 144px;
+  line-height: 152px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin: 0;
+  margin-bottom: 31px; }
+
+.intro__description {
+  width: 650px;
+  font-size: 24px;
+  line-height: 28px;
+  font-style: normal;
+  font-weight: normal;
+  color: #000000;
+  margin: 0;
+  margin-bottom: 109px; }
+
+.intro__text {
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #000000;
+  width: 380px;
+  margin: 0; }
+  .intro__text b {
+    display: block;
+    font-size: 36px;
+    line-height: 43px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 8px; }
+
+.intro__image {
+  width: 712px;
+  height: 841px;
+  position: absolute;
+  right: 0;
+  top: 62px;
+  z-index: -1; }
+
+.advantages__container {
+  max-width: 1312px;
+  margin: 0 auto;
+  padding-top: 7px; }
+
+.advantages__text {
+  font-size: 48px;
+  line-height: 57px;
+  font-style: normal;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 73px; }
+  .advantages__text span {
+    color: #fcb500; }
+
+.advantages__prises {
+  width: 30%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+
+.advantages__prise {
+  font-size: 48px;
+  line-height: 57px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff; }
+  .advantages__prise--old {
+    font-size: 36px;
+    line-height: 43px;
+    color: #adadad;
+    text-decoration: line-through;
+    margin-right: 32px; }
+
+.advantages__list {
+  padding: 0;
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1093px;
+  margin: 0 auto;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.advantages__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+
+.advantages__description {
+  font-size: 18px;
+  line-height: 21px;
+  font-style: normal;
+  font-weight: 400;
+  color: #ffffff; }
+  .advantages__description b {
+    color: #fcb500;
+    font-weight: 400; }
