@@ -1,7 +1,8 @@
 .advantages__container {
+  width: 91%;
   max-width: 1312px;
   margin: 0 auto;
-  padding-top: 7px;
+  padding-top: 112px;
 }
 
 .advantages__text {
@@ -12,7 +13,8 @@
   text-transform: uppercase;
   color: #ffffff;
   text-align: center;
-  width: 65%;
+  width: 80%;
+  max-width: 852px;
   margin: 0 auto;
   margin-bottom: 73px;
 
@@ -50,7 +52,9 @@
   padding: 0;
   list-style: none;
   display: flex;
-  width: 1093px;
+  flex-wrap: wrap;
+  width: 95%;
+  max-width: 1093px;
   margin: 0 auto;
   margin-bottom: 58px;
   justify-content: space-between;
@@ -119,5 +123,105 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__container {
+    width: 95%;
+    padding-top: 70px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__text {
+    font-size: 40px;
+    line-height: 50px;
+    width: 91%;
+    max-width: 705px;
+    margin-bottom: 45px;
+  }
+
+  .advantages__prises {
+    width: 60%;
+  }
+
+  .advantages__prise {
+    font-size: 40px;
+    line-height: 50px;
+
+    &--old {
+      font-size: 30px;
+      line-height: 40px;
+      margin-right: 25px;
+    }
+  }
+
+  .advantages__list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .advantages__item {
+    margin-bottom: 40px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .advantages__image {
+    margin-bottom: 35px;
+  }
+
+  .advantages__button {
+    margin-bottom: 50px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__container {
+    width: 100%;
+    padding-top: 40px;
+    padding-right: 2%;
+    padding-left: 2%;
+  }
+
+  .advantages__text {
+    font-size: 30px;
+    line-height: 40px;
+    width: 95%;
+    margin-bottom: 30px;
+  }
+
+  .advantages__prise {
+    font-size: 30px;
+    line-height: 40px;
+
+    &--old {
+      font-size: 25px;
+      line-height: 35px;
+      margin-right: 20px;
+    }
+  }
+
+  .advantages__list {
+    width: 100%;
+  }
+
+  .advantages__image--vitamins {
+    width: 300px;
+    height: auto;
+  }
+
+  .advantages__description--big {
+    font-size: 30px;
+    line-height: 40px;
+
+    & b {
+      font-size: 20px;
+      line-height: 24px;
+    }
   }
 }
